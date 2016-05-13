@@ -1,4 +1,4 @@
-(function(webkitSpeechRecognition) {
+(function() {
   'use strict';
 
   var v = [];
