@@ -16,7 +16,7 @@ Interactive videos can create a more interesting visual storytelling. Instead of
 
 The goal is to firstly impress viewers and retain their attention for a longer time, and then convey the message more efficiently.
 
-## Demos
+## [Demos][534a418f]
 
 - [Voice Control Video][e4e51171]
 - [Keyboard Control Video][877d8503]
@@ -26,6 +26,7 @@ The goal is to firstly impress viewers and retain their attention for a longer t
 
 Many thanks to all the video owners.
 
+[534a418f]: http://xia-du.github.io/upp-video/ "demos"
 [4bc45b20]: http://blog.hubspot.com/marketing/video-marketing-statistics "Online Video Infographic"
 [877d8503]: http://xia-du.github.io/upp-video/keypress.html "keyboard control video"
 [e4e51171]: http://xia-du.github.io/upp-video/voice.html "voice control video"
