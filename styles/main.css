@@ -1,0 +1,89 @@
+  html, body {
+    background-color: #121212;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    overflow: hidden;
+    font-family: "Lato", sans-serif;
+  }
+  a {
+    text-decoration: none;
+  }
+  .back {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+    z-index: 10000;
+  }
+  .back img {
+    width: 100%;
+  }
+  .gallery-wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  .title {
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    opacity: 0.2;
+    font-size: 6em;
+    width: 100%;
+    top: 0;
+    font-weight: 700;
+    z-index: 1000;
+    margin: 0;
+  }
+  .item {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    filter: grayscale(100%);
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+  }
+  .item:nth-child(1) {
+    background-image: url('https://images.unsplash.com/photo-1460999158988-6f0380f81f4d?crop=entropy&dpr=2&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1450')
+  }
+  .item:nth-child(2) {
+    background-image: url('http://accorhotels.com.au/files/MelbourneBridge_2400x1350_0.jpg')
+  }
+  .item:nth-child(3) {
+    background-image: url('https://images.unsplash.com/photo-1453955994444-36bcd2f979fb?crop=entropy&dpr=2&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1450')
+  }
+  .item:hover {
+    flex: 1.8;
+    filter: none;
+  }
+  .gallery-wrap .item h2 {
+    text-align: center;
+    font-size: 4em;
+    transform: rotate(90deg);
+    color: #121212;
+    font-weight: 700;
+    transition: all 0.4s ease-in-out;
+  }
+  .gallery-wrap .item h2.large {
+    font-size: 7em;
+  }
+  .gallery-wrap .item-1 h2.large {
+    color: #ff5f25;
+  }
+  .gallery-wrap .item-2 h2.large {
+    color: #4943ff;
+  }
+  .gallery-wrap .item-3 h2.large {
+    color: #1fb7ca;
+  }

@@ -1,0 +1,42 @@
+body {
+  background-color: #121212;
+  text-align: center;
+}
+
+video {
+  position: absolute;
+  width: 60%;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.hint {
+  position: absolute;
+  width: 100%;
+  bottom: 20%;
+  color: #eee;
+}
+
+#headline {
+  font-size: 80px;
+  font-weight: 600;
+  color: #fff;
+}
+#result {
+  background-color: #121212;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  min-height: 80px;
+  border: none;
+  padding-bottom: 10px;
+}

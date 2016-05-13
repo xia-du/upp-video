@@ -1,0 +1,130 @@
+body {
+  background-color: transparent;
+}
+
+.vertical-center {
+  min-height: 100%;
+  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh;
+  /* These two lines are counted as one :-)       */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vertical-center-2 {
+  min-height: 100%;
+  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh;
+  /* These two lines are counted as one :-)       */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-square {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 50px;
+  font-family: Verdana;
+}
+
+.video-wrap {
+  position: absolute;
+  top: 620px;
+  left: 500px;
+  z-index: 99;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.v-wrap {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.v-wrap video {
+  position: fixed;
+  height: 100vh;
+}
+
+.end-mask,
+.mask {
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all ease-in-out 1s;
+}
+
+.mask {
+  opacity: 1;
+  z-index: 99;
+}
+
+.end-mask {
+  opacity: 0;
+  z-index: 89;
+}
+.end-mask h2 {
+  position: relative;
+  text-align: center;
+  top: 380px;
+}
+
+.spacebar {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+
+#start {
+  z-index: -1;
+}
+
+#video-park {
+  z-index: -2;
+}
+
+#end {
+  z-index: -3;
+}
+
+@-webkit-keyframes demo {
+  0% {
+    border-color: #e27715;
+    color: #e27715;
+    opacity: 1;
+  }
+  22% {
+    border-color: #a9f41d;
+    color: #a9f41d;
+  }
+  66% {
+    border-color: white;
+    color: white;
+  }
+  77% {
+    border-color: #5870d2;
+    color: #5870d2;
+  }
+  100% {
+    border-color: #e27715;
+    color: #e27715;
+  }
+}
+.demo {
+  -webkit-animation-name: demo;
+  -webkit-animation-duration: 2000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+}
